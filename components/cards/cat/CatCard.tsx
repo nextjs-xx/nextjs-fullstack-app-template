@@ -10,9 +10,9 @@ export interface ICatCard {
 
 const CatCard: React.FC<ICatCard> = ({ tag, title, body, author, time }) => {
   return (
-    <div className={styles.component}>
+    <div className={styles.container}>
       <div className={styles.card}>
-        <div className={styles.card_header}>
+        <div className={styles.card__header}>
           <Image
             src="/time-cat.jpg"
             alt="card__image"
@@ -21,12 +21,12 @@ const CatCard: React.FC<ICatCard> = ({ tag, title, body, author, time }) => {
             height="400"
           />
         </div>
-        <div className={styles.card_body}>
+        <div className={styles.card__body}>
           <span className={`${styles.tag} ${styles['tag-blue']}`}>{tag}</span>
           <h4>{title}</h4>
           <p>{body}</p>
         </div>
-        <div className={styles.card_footer}>
+        <div className={styles.card__footer}>
           <div className={styles.user}>
             <Image
               src="/header40.jpg"
