@@ -8,15 +8,11 @@ import { NextPageWithLayout } from './page';
 const Home: NextPageWithLayout = () => {
   return (
     <section className={styles.main}>
-      <h1 className={styles.title}>
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
+      <h1 className={styles.title}>Hello World!</h1>
       <CatCard {...mockCatCardProps.base} />
     </section>
   );
 };
-
-export default Home;
 
 Home.getLayout = (page) => {
   return (
@@ -26,3 +22,5 @@ Home.getLayout = (page) => {
     </PrimaryLayout>
   );
 };
+
+export default Home;
