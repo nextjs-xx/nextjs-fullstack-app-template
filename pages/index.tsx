@@ -16,6 +16,7 @@ const Home: NextPageWithLayout = () => {
       <CatCard {...mockCatCardProps.base} />
       <ButtonTemplate {...mockButtonTemplateProps.base} />
       <AvatarUI {...mockAvatarProps.base} />
+      <AvatarUI {...mockAvatarProps.baseImg} />
     </section>
   );
 };
