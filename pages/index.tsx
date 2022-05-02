@@ -1,5 +1,5 @@
-import ButtonTemplate from '../components/button/ButtonTemplate';
-import { mockButtonTemplateProps } from '../components/button/ButtonTemplate.mocks';
+import ButtonTemplate from '../components/nextui/button/ButtonTemplate';
+import { mockButtonTemplateProps } from '../components/nextui/button/ButtonTemplate.mocks';
 import CatCard from '../components/cards/cat/CatCard';
 import { mockCatCardProps } from '../components/cards/cat/CatCard.mocks';
 import PrimaryLayout from '../components/layouts/primary/PrimaryLayout';
