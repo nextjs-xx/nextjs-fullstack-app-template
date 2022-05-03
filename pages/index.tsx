@@ -4,6 +4,8 @@ import PrimaryLayout from '../components/layouts/primary/PrimaryLayout';
 import SidebarLayout from '../components/layouts/sidebar/SidebarLayout';
 import AvatarUI from '../components/nextui/avatar/AvatarUI';
 import { mockAvatarProps } from '../components/nextui/avatar/AvatarUI.mocks';
+import AvatarUIGroup from '../components/nextui/avatargroup/AvatarUIGroup';
+import { mockAvatarGroupProps } from '../components/nextui/avatargroup/AvatarUIGroup.mocks';
 import ButtonTemplate from '../components/nextui/button/ButtonTemplate';
 import { mockButtonTemplateProps } from '../components/nextui/button/ButtonTemplate.mocks';
 import styles from '../styles/Home.module.css';
@@ -17,6 +19,7 @@ const Home: NextPageWithLayout = () => {
       <ButtonTemplate {...mockButtonTemplateProps.base} />
       <AvatarUI {...mockAvatarProps.base} />
       <AvatarUI {...mockAvatarProps.baseImg} />
+      <AvatarUIGroup {...mockAvatarGroupProps.baseGroup} />
     </section>
   );
 };
