@@ -7,8 +7,10 @@ export interface IAvatar {
 const AvatarUI: React.FC<IAvatar> = ({ avatarImg, nickName }) => {
   if (avatarImg == '') {
     return <Avatar squared text={nickName} />;
-  } else {
+  } else if (nickName == '') {
     return <Avatar squared src={avatarImg} />;
+  } else {
+    return <Avatar squared src={avatarImg} text={nickName} />;
   }
 };
 
