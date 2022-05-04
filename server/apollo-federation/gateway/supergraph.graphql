@@ -33,8 +33,8 @@ type Department
 scalar join__FieldSet
 
 enum join__Graph {
-  PRODUCTS @join__graph(name: "products", url: "http://productsAPI:4001/graphql")
-  REVIEWS @join__graph(name: "reviews", url: "http://reviewsAPI:4002/graphql")
+  PRODUCTS @join__graph(name: "products", url: "http://localhost:4001/graphql")
+  REVIEWS @join__graph(name: "reviews", url: "http://localhost:4002/graphql")
 }
 
 scalar link__Import

@@ -1,10 +1,10 @@
 federation_version: 2 # Without this line, Rover uses Federation 1
 subgraphs:
   products:
-    routing_url: http://productsAPI:4001/graphql
+    routing_url: http://localhost:4001/graphql
     schema:
-      subgraph_url: http://productsAPI:4001/graphql
+      subgraph_url: http://localhost:4001/graphql
   reviews:
-    routing_url: http://reviewsAPI:4002/graphql
+    routing_url: http://localhost:4002/graphql
     schema:
-      subgraph_url: http://reviewsAPI:4002/graphql
+      subgraph_url: http://localhost:4002/graphql
