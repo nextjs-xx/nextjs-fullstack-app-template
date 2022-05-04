@@ -1,0 +1,28 @@
+version: '3.6'
+
+services:
+  productsAPI: 
+    image: node:16
+    volumes:
+      - ./productsAPI:/usr/src/app
+    command: bash -c "cd /usr/src/app && npm install && npm start"
+
+  reviewsAPI:
+    image: node:16
+    volumes:
+      - ./reviewsAPI:/usr/src/app
+    command: bash -c "cd /usr/src/app && npm install && npm start"
+
+  gatewayAPI:
+    image: node:16
+    ports:
+      - "4000:4000"
+    environment:
+      - APOLLO_CONFIG_HOME=/usr/src/app
+      - APOLLO_ELV2_LICENSE=accept
+    volumes:
+      - ./gateway:/usr/src/app
+    command: bash -c "cd /usr/src/app && npm install && npm start"
+    depends_on:
+      - productsAPI
+      - reviewsAPI

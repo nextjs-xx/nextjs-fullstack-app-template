@@ -1,0 +1,20 @@
+{
+  "name": "reviewsAPI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/subgraph": "^2.0.1",
+    "@graphql-tools/graphql-file-loader": "^7.3.11",
+    "@graphql-tools/load": "^7.5.10",
+    "apollo-server": "^3.6.7",
+    "graphql": "^16.4.0"
+  }
+}

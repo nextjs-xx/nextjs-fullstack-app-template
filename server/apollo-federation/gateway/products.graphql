@@ -1,0 +1,54 @@
+type Product @key(fields: "id") {
+  id: ID!
+  title: String
+  url: String
+  description: String
+  price: Price
+  salesRank(category: ProductCategory = ALL): Int
+  salesRankOverall: Int
+  salesRankInCategory: Int
+  category: ProductCategory
+  images(size: Int = 1000): [String]
+  primaryImage(size: Int = 1000): String
+}
+
+type Price {
+  cost: Money
+
+  """
+  A number between 0 and 1 signifying the % discount
+  """
+  deal: Float
+  dealSavings: Money
+}
+
+type Department {
+  category: ProductCategory
+  url: String
+}
+
+enum ProductCategory {
+  ALL
+  GIFT_CARDS
+  ELECTRONICS
+  CAMERA_N_PHOTO
+  VIDEO_GAMES
+  BOOKS
+  CLOTHING
+}
+
+type Money {
+  amount: Float
+  currencyCode: CURRENCY_CODE
+}
+
+enum CURRENCY_CODE {
+  USD
+  EUR
+}
+
+type Query {
+  bestSellers(category: ProductCategory = ALL): [Product]
+  categories: [Department]
+  product(id: ID!): Product
+}
