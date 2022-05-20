@@ -18,7 +18,7 @@
     "npm": "please-use-yarn"
   },
   "dependencies": {
-    "@nextui-org/react": "1.0.0-beta.6",
+    "@nextui-org/react": "1.0.0-beta.7",
     "next": "12.1.4",
     "react": "18.0.0",
     "react-dom": "18.0.0"
