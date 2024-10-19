@@ -2,19 +2,19 @@ version: '3.6'
 
 services:
   productsAPI: 
-    image: node:18
+    image: node:20
     volumes:
       - ./productsAPI:/usr/src/app
     command: bash -c "cd /usr/src/app && npm install && npm start"
 
   reviewsAPI:
-    image: node:18
+    image: node:20
     volumes:
       - ./reviewsAPI:/usr/src/app
     command: bash -c "cd /usr/src/app && npm install && npm start"
 
   gatewayAPI:
-    image: node:18
+    image: node:20
     ports:
       - "4000:4000"
     environment:
