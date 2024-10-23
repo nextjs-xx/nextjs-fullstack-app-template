@@ -13,7 +13,7 @@
     "react-twitter-embed": "4.0.4"
   },
   "devDependencies": {
-    "@types/node": "17.0.4",
+    "@types/node": "20.17.0",
     "@types/react": "18.0.9",
     "autoprefixer": "10.4.7",
     "postcss": "8.4.14",
